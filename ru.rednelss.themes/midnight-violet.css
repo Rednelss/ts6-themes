@@ -1,0 +1,228 @@
+/* ==========================================================================
+   TeamSpeak 6 — Midnight Violet Theme
+   Author: Rednelss
+   License: MIT
+
+   Deep amethyst-violet dark theme with a cool near-black base
+   ========================================================================== */
+
+/* ── Master variable override ────────────────────────────────────────── */
+:root,
+::before,
+::after {
+  /* ── Accent: amethyst violet ── */
+  --tsv-tint:                              #a855f7 !important;
+  --tsv-tint2:                             #8b5cf6 !important;
+  --tsv-highlight-color:                   #a855f7 !important;
+  --default-tsv-tint:                      #a855f7 !important;
+  --ts-menu-action-color:                  #c084fc !important;
+  --ts-primary-accent-color:               #a855f7 !important;
+  --tsv-content-branding-fancy-gradient-start: #a855f7 !important;
+  --tsv-content-branding-fancy-gradient-end:   #6d28d9 !important;
+  --font-color-button-white:               #f5f3ff !important;
+
+  /* ── Surfaces: deep violet-black scale ── */
+  --tsv-bg:                                #13111c !important;
+  --tsv-shaded-bg:                         #0d0b14 !important;
+  --tsv-contrast-bg:                       #1c1928 !important;
+  --tsv-contrast-strong-bg:                #2a2538 !important;
+  --tsv-header-bg:                         #0d0b14 !important;
+  --ts-new-header-bg:                      #0d0b14 !important;
+  --strong-bg:                             #0a0810 !important;
+  --tsv-preview-bg:                        #1c1928 !important;
+  --tsv-deviant-bg:                        #17141f !important;
+  --card-background:                       #1c1928 !important;
+  --card-hover-background:                 #2a2538 !important;
+  --tsv-window-color:                      #13111c !important;
+  --tsv-settings-bg:                       #0d0b14 !important;
+  --tsv-header-toolbar-bg:                 #13111c !important;
+  --tsv-homebase-bg:                       #1c1928 !important;
+  --tsv-homebase-transparent-bg:           rgba(19, 17, 28, 0.7) !important;
+  --tsv-dashboard-add-contact-bg:          #17141f !important;
+
+  /* ── Sidebar / tree ── */
+  --tsv-side-bar-bg-gradient-bottom:       #0d0b14 !important;
+  --tsv-main-bg-gradient-start:            #17141f !important;
+  --tsv-main-bg-gradient-end:              #13111c !important;
+  --tsv-servertree-bg-gradient:            linear-gradient(25deg, #13111c 0%, #17141f 60%) !important;
+  --tsv-servertree-blur-tint:              rgba(19, 17, 28, 0.3) !important;
+  --ts-tree-badges-bg:                     #2a2538 !important;
+  --ts-tree-channel-bg-start:              #1c1928 !important;
+  --ts-tree-channel-bg-end:                #221d30 !important;
+  --tsv-server-header-gradient-start:      #0d0b14 !important;
+  --tsv-server-header-gradient-end:        #1c1928 !important;
+  --tsv-view-header-gradient-start:        #1c1928 !important;
+  --tsv-view-header-gradient-end:          #0d0b14 !important;
+  --tsv-view-header-bg:                    linear-gradient(to bottom, #1c1928, #0d0b14) !important;
+  --tsv-unrelated-activity-header-bg:      linear-gradient(to top, #0d0b14, #13111c) !important;
+  --tsv-unrelated-activity-seperator-color:#2a2538 !important;
+  --presence-separator-presence:           #0d0b14 !important;
+  --tsv-separation-border-color:           #2a2538 !important;
+  --tsv-separation-border-strong-color:    #1c1928 !important;
+
+  /* ── Tabs ── */
+  --tsv-tab-content:                       #1c1928 !important;
+  --tsv-tab-item-active:                   linear-gradient(to bottom, #1c1928, #1c1928) !important;
+  --tsv-highlight-header-bg:               linear-gradient(to bottom, #0d0b14, #a855f7) !important;
+  --tsv-highlight-header-honeycomb-bg:     linear-gradient(to bottom, #0d0b14, #6d28d9, #a855f7, #a855f7) !important;
+
+  /* ── Branding gradients (dashboard banners) ── */
+  --tsv-content-branding-bg:               radial-gradient(circle, #8b85a0 0%, #13111c 100%) !important;
+  --tsv-content-branding-fancy-bg:         radial-gradient(circle, #a855f7 0%, #6d28d9 100%) !important;
+  --tsv-content-branding-fancy-bg-linear:  linear-gradient(to top, #a855f7 0%, #6d28d9 100%) !important;
+  --tsv-content-branding-pinned-bg:        radial-gradient(circle, rgba(190, 90, 200, 1) 0%, rgba(109, 40, 217, 1) 100%) !important;
+  --tsv-content-branding-servers-bg-gradient-stop-1: #0d0b14 !important;
+  --tsv-content-branding-servers-bg-gradient-stop-2: #1c1928 !important;
+  --tsv-content-branding-servers-bg-gradient-stop-3: #6d28d9 !important;
+
+  /* ── Typography ── */
+  --tsv-font-color:                        #e9e6f0 !important;
+  --tsv-font-color-invert:                 #13111c !important;
+  --tsv-item-title-color:                  #e9e6f0 !important;
+  --tsv-font-subtitle-color:               #8b85a0 !important;
+  --tsv-item-accessory-color:              #6b6680 !important;
+  --tsv-contrast-font-color:               #13111c !important;
+  --tsv-disabled-color:                    #4a4658 !important;
+  --tsv-connection-client-font-color:      #8b85a0 !important;
+
+  /* ── Icons ── */
+  --tsv-icon-base:                         #e9e6f0 !important;
+  --tsv-icon-tint:                         #a855f7 !important;
+  --tsv-icon-tint2:                        #c084fc !important;
+  --tsv-icon-base-contrast:                #13111c !important;
+  --tsv-icon-folder:                       #a855f7 !important;
+  --tsv-icon-shaded-bg:                    #2a2538 !important;
+  --tsv-icon-channel-bg:                   #0d0b14 !important;
+  --tsv-icon-channel-shade1:               #cbb8e8 !important;
+  --tsv-icon-channel-shade2:               #a894d0 !important;
+  --tsv-icon-channel-shade3:               #e0d4f5 !important;
+
+  /* ── Chat ── */
+  --tsv-chat-remote-bg:                    #1c1928 !important;
+  --tsv-chat-self-bg:                      #2d1b47 !important;
+  --tsv-chat-self-bg-transparent:          rgba(45, 27, 71, 0.7) !important;
+  --tsv-chat-self-bg-pending:              #a855f7 !important;
+  --tsv-chat-self-bg-pending-transparent:  rgba(168, 85, 247, 0.3) !important;
+  --tsv-chat-remote-font-color:            #e9e6f0 !important;
+  --tsv-chat-self-font-color:              #f5f3ff !important;
+  --tsv-chat-deleted-bg:                   #2d1b1b !important;
+  --tsv-chat-deleted-font-color:           #f87171 !important;
+  --tsv-chat-link-color:                   #c084fc !important;
+  --tsv-chat-mention-bg:                   #3b2461 !important;
+  --ts-chat-system-message-bg:             #0d0b14 !important;
+  --ts-chat-system-highlight-text-color:   #22d3ee !important;
+  --tsv-chat-widget-bg:                    linear-gradient(25deg, #17141f, #13111c) !important;
+  --tsv-chat-placeholder-element-bg-1:     #3a3450 !important;
+  --tsv-chat-placeholder-element-bg-2:     #2a2538 !important;
+  --tsv-chat-placeholder-element-bg-3:     #4a4658 !important;
+  --ts-contact-typing-color:               #8b85a0 !important;
+
+  /* ── Buttons ── */
+  --tsv-button-bg:                         linear-gradient(-45deg, #8b5cf6 1%, #a855f7 100%) !important;
+  --tsv-button-hover-bg:                   #c084fc !important;
+  --tsv-button-filled-bg:                  linear-gradient(60deg, #a855f7, #6d28d9) !important;
+  --tsv-button-filled-destructive-bg:      linear-gradient(to top, #ef4444, #b91c1c) !important;
+  --tsv-button-filled-disabled-bg:         linear-gradient(to bottom, #2a2538, #3a3450) !important;
+
+  /* ── Controls ── */
+  --tsv-slider-track-bg:                   #2a2538 !important;
+  --tsv-toggle-bg:                         #3a3450 !important;
+  --tsv-control-handle-bg:                 linear-gradient(to bottom, #4a4658, #2a2538) !important;
+  --tsv-control-handle-active-bg:          linear-gradient(to bottom, #8b5cf6, #c084fc) !important;
+  --tsv-slider-vad-color:                  #22d3ee !important;
+  --settings-highlight-bg:                 #2d1b47 !important;
+
+  /* ── Context menu ── */
+  --ts-context-menu-background:            #1c1928 !important;
+  --tsv-context-menu-border:               #2a2538 !important;
+  --tsv-context-menu-item-selection:       #2d1b47 !important;
+  --ts-context-menu-font-color:            #e9e6f0 !important;
+  --ts-context-menu-icon-tint-color:       #a855f7 !important;
+  --tsv-context-menu-disabled-color:       #4a4658 !important;
+
+  /* ── Scrollbar ── */
+  --tsv-scrollbar-bg:                      #2a2538 !important;
+  --tsv-scrollbar-chunks--bg-1:            #a855f7 !important;
+  --tsv-scrollbar-chunks--bg-2:            #4c1d95 !important;
+
+  /* ── Status / presence ── */
+  --tsv-online-color:                      #34d399 !important;
+  --tsv-accept-color:                      #34d399 !important;
+  --tsv-accept-light-color:                #a7f3d0 !important;
+  --tsv-away-color:                        #fbbf24 !important;
+  --tsv-error-color:                       #ef4444 !important;
+  --tsv-error-light-color:                 #f87171 !important;
+  --presence-online:                       #34d399 !important;
+  --presence-away:                         #fbbf24 !important;
+  --presence-dnd:                          #ef4444 !important;
+
+  /* ── Shadows / shading ── */
+  --tsv-shade:                             rgba(255, 255, 255, 0.04) !important;
+  --tsv-shadow-color:                      rgba(0, 0, 0, 0.5) !important;
+  --tsv-server-info-topic-bg:              rgba(13, 11, 20, 0.6) !important;
+
+  /* ── Misc ── */
+  --graph-layer-bg:                        #4a4658 !important;
+  --tsv-favorite-fill:                     #fbbf24 !important;
+  --tsv-favorite-stroke:                   #2a2538 !important;
+  --ts-select-bg:                          #1c1928 !important;
+}
+
+/* ── Direct overrides for elements that ignore variables ─────────────── */
+.tsv-search-input::placeholder {
+  color: #6b6680 !important;
+}
+
+.ts-chat-input-container {
+  border-color: #2a2538 !important;
+  background-color: #1c1928 !important;
+  --body-bg: #1c1928;
+  --body-bg-contrast: #0d0b14;
+}
+.ts-chat-input-container:focus-within,
+.ts-chat-input-container:hover {
+  border-color: #a855f7 !important;
+  box-shadow: 0 0 0 1px #a855f7 !important;
+}
+.ts-chat-input-container-content {
+  background-color: #1c1928 !important;
+}
+
+/* Chat editor (CodeMirror) */
+.cm-editor,
+.cm-scroller,
+.cm-content {
+  background: transparent !important;
+  color: #e9e6f0 !important;
+}
+.cm-editor .cm-cursor {
+  border-left-color: #a855f7 !important;
+}
+.ͼ2 .cm-selectionBackground,
+.ͼ2.cm-focused > .cm-scroller > .cm-selectionLayer .cm-selectionBackground {
+  background: #2d1b47 !important;
+}
+
+/* Scrollbar track */
+::-webkit-scrollbar-track {
+  background-color: transparent !important;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #2a2538 !important;
+  border-radius: 8px !important;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: #3a3450 !important;
+}
+
+/* Kill the hex pattern overlay */
+.ts-background-hexes-container,
+.ts-activities-placeholder {
+  display: none !important;
+}
+
+/* Focus ring */
+*:focus-visible {
+  outline: 2px solid #a855f7 !important;
+  outline-offset: 1px;
+}
