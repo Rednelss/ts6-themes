@@ -2,7 +2,7 @@
 
 Две тёмные темы для клиента **TeamSpeak 6**: глубокий фиолетовый **Midnight Violet** и прохладный бирюзовый **Abyss**.
 
-![Превью тем](./preview.svg)
+![Превью тем](./ru.rednelss.themes/preview.svg)
 
 ---
 
@@ -20,7 +20,7 @@
 | Акцент (hover) | `#c084fc` |
 | Текст | `#e9e6f0` |
 
-![Midnight Violet](./preview-midnight-violet.svg)
+![Midnight Violet](./ru.rednelss.themes/preview-midnight-violet.svg)
 
 ### 🌊 Abyss
 Глубоководная тема. Почти чёрная бирюзовая база, холодные cyan-акценты, спокойный контраст.
@@ -34,7 +34,7 @@
 | Акцент (hover) | `#67e8f9` |
 | Текст | `#d4e8ed` |
 
-![Abyss](./preview-abyss.svg)
+![Abyss](./ru.rednelss.themes/preview-abyss.svg)
 
 ---
 
