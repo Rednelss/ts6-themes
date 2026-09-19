@@ -1,0 +1,36 @@
+{
+  "name": "TeamSpeak 6 // Rednelss Themes",
+  "description": "Themes for TeamSpeak 6 by Rednelss",
+  "version": "1.0.0",
+  "identifier": "ru.rednelss.themes",
+  "engines": {
+    "teamspeak": 1
+  },
+  "repository": {
+    "url": "https://github.com/Rednelss/ts6-themes",
+    "directory": "ru.rednelss.themes",
+    "type": "git"
+  },
+  "image": "preview.svg",
+  "license": "MIT",
+  "author": {
+    "name": "Rednelss"
+  },
+  "keywords": ["dark", "violet", "cyan", "teal", "theme"],
+  "content": {
+    "themes": [
+      {
+        "name": "Midnight Violet Theme",
+        "source": "midnight-violet.css",
+        "image": "preview-midnight-violet.svg",
+        "apiVersion": 1
+      },
+      {
+        "name": "Abyss Theme",
+        "source": "abyss.css",
+        "image": "preview-abyss.svg",
+        "apiVersion": 1
+      } 
+    ]
+  }
+}
